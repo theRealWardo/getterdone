@@ -1,34 +1,27 @@
-=head1 GetterDone
+# GetterDone
 
 An open source ToDo application created by Matt Ward.
 
-=head1 Purpose
+# Purpose
 
 The purpose of this app is to serve as a demo for my OpenSource PHP MVC framework.
 The source code is to be extensively documented to allow for adaptation of the underlying framework.
 This example application will illustrate the basic functionality of the framework and should serve as a usage guide.
 
-=head1 Road Map
+# Road Map
 
-=over 4
+* Basic pages (homepage and about)
+* Register and login pages (using HTTPS)
+* A simple AJAX enabled task manager
+* Adding a mobile site
 
-=item * Basic pages (homepage and about)
-
-=item * Register and login pages (using HTTPS)
-
-=item * A simple AJAX enabled task manager
-
-=item * Adding a mobile site
-
-=back
-
-=head1 Feedback / Feature Requests
+# Feedback / Feature Requests
 
 If you would like to give feedback or request a feature be implemented, you may email
-L<getterdone@mwdesigns.com> or you are welcome to implement the feature yourself. I would love
+[getterdone@mwdesigns.com][getterdone@mwdesigns.com] or you are welcome to implement the feature yourself. I would love
 to be notified if you think you added something useful, but of course you are not obligated to do so.
 
-=head1 License
+# License
 
 The MIT License
 

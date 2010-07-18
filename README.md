@@ -18,7 +18,7 @@ This example application will illustrate the basic functionality of the framewor
 # Feedback / Feature Requests
 
 If you would like to give feedback or request a feature be implemented, you may email
-[getterdone@mwdesigns.com][getterdone@mwdesigns.com] or you are welcome to implement the feature yourself. I would love
+[getterdone@mwdesigns.com](mailto:getterdone@mwdesigns.com "email me") or you are welcome to implement the feature yourself. I would love
 to be notified if you think you added something useful, but of course you are not obligated to do so.
 
 # License

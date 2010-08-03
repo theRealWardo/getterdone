@@ -308,7 +308,7 @@ class Form {
 			$prams = array();
 			foreach ($keys as $key) {
 				if ($key == "password")
-					$this->data[$key] = md5($this->data[$key]);
+					$this->data[$key] = sha1($this->data[$key]);
 				if ($key == "updated")
 					$this->updated = true;
 				if (is_array($this->data[$key]))
@@ -337,7 +337,7 @@ class Form {
 			$prams = array();
 			foreach ($keys as $key) {
 				if ($key == "password")
-					$this->data[$key] = md5($this->data[$key]);
+					$this->data[$key] = sha1($this->data[$key]);
 				if ($key == "updated")
 					$this->updated = true;
 				if (is_array($this->data[$key]))

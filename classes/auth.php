@@ -31,7 +31,7 @@ class Auth {
 	function login($check = false) {
 		// This function handles login if posted at $_POST['username'] and $_POST['password']
 		$user = DB::safe($_POST['username']);
-		$pass = md5($_POST['password']);
+		$pass = sha1($_POST['password']);
 		$user_data = DB::get_row("SELECT * FROM ".$this->auth_table." WHERE `username`='".$user."'");
 		if ($user_data['password']== $pass) {
 			$this->username = $user;

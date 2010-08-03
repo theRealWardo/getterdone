@@ -1,0 +1,27 @@
+@font-face { font-family: Molengo; src: url(/lib/fonts/Molengo.ttf) format("truetype"); }
+html, body, div, span, applet, article, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, header, img, ins, kbd, nav, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+body { background:url(/images/header_bg.gif) top repeat-x #B2B2B2; font-family:Arial, Helvetica, sans-serif; }
+a { text-decoration:none; }
+img { border:0; }
+h1 { color:#FFFFFF; padding:20px 0; font-family:Molengo, Arial, Helvetica, sans-serif; font-size:3em; text-align:center; text-shadow:1px 1px 2px #666666; }
+div#container { width:850px; margin:0 auto; }
+header { height:54px; width:850px; }
+div#logo { float:left; }
+div#logo a { width:220px; height:53px; }
+nav { float:right; width:400px; }
+nav ul { width:300px; height:53px; float:left; list-style:none; }
+nav ul li { float:left; padding:17px 20px 0; }
+nav ul li a { color:#CFFFFF; }
+nav ul li a:hover, nav ul li.active a { color:#FFFFFF; }
+nav div#login, nav div#logout { width:100px; padding-top:17px; float:right; }
+nav div.button a { color:#006699; border:1px solid #000000; padding:6px 20px; background-color: #CCCCCC; background-image:-moz-linear-gradient(0% 100% 90deg,#C4C4C4, #FFFFFF); background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#C4C4C4)); -moz-border-radius:15px; -webkit-border-radius: 15px; }
+nav div.button a:hover { color:#FFFFFF; background-color: #CCCCCC; background-image:-moz-linear-gradient(0% 100% 90deg,#000000, #666666); background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#666666), to(#000000)); }
+div.page-content, div.clear_fix { clear:both; }
+/* Default Button Styles */
+div.button a { color:#006699; border:2px solid #666666; padding:10px 20px; background-color: #CCCCCC; background-image:-moz-linear-gradient(0% 100% 90deg,#C4C4C4, #FFFFFF); background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#C4C4C4)); -moz-border-radius:20px; -webkit-border-radius: 20px; }
+div.button img#download { position:relative; top:8px; left:5px; }
+div.button a:hover { color:#FFFFFF; background-color: #CCCCCC; background-image:-moz-linear-gradient(0% 100% 90deg,#000000, #666666); background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#666666), to(#000000)); }
+/* Homepage Styles */
+#home div.left { float:left; width:320px; height:125px; padding:10px 20px 0 0; text-align:right; }
+#home div.left .button { position:relative; top:12px; } /* compensate for img in right button */
+#home div.right { float:right; width:405px; height:125px; padding:10px 20px 0 0; text-align:left; }

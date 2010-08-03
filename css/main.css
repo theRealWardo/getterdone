@@ -8,6 +8,7 @@ div#container { width:850px; margin:0 auto; }
 header { height:54px; width:850px; }
 div#logo { float:left; }
 div#logo a { width:220px; height:53px; }
+.message { clear:both; text-align:center; background:#FFFFCC; padding: 10px 0; border-top:1px solid #666666; border-bottom:1px solid #666666; }
 nav { float:right; width:400px; }
 nav ul { width:300px; height:53px; float:left; list-style:none; }
 nav ul li { float:left; padding:17px 20px 0; }

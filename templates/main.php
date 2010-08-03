@@ -33,6 +33,10 @@
 	</nav>
 </header>
 
+<? if (!empty($message)): ?>
+<div class="message"><?=$message?></div>
+<? endif ?>
+
 <?=$main_content?>
 
 </div>

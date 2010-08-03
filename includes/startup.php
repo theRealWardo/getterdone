@@ -16,6 +16,7 @@ define ('DB_BASE', 'getterdone');
 
 // Constants:
 define ('DIRSEP', DIRECTORY_SEPARATOR);
+define ('SITE_TITLE', "GetterDone");
 
 // Get site path
 $site_path = realpath(dirname(__FILE__) . DIRSEP . '..' . DIRSEP) . DIRSEP;

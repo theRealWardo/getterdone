@@ -1,5 +1,5 @@
 <?
-class Controller_Index extends Controller_Base {
+class Controller_Main extends Controller_Base {
 
 	function beforeRender() {
 		if ($this->Router->getArg() == "ajax") {
@@ -8,22 +8,11 @@ class Controller_Index extends Controller_Base {
 			$this->setTemplate('main');
 		}
 	}
-
+	
 	function index() {
-		$this->set('page_title', "Home");
-	}
-
-	function setup() {
-		$todos = 'CREATE TABLE `todos` ('
-        . ' `short` VARCHAR(255) NOT NULL, '
-        . ' `long` TEXT NOT NULL, '
-        . ' `date` DATETIME NOT NULL, '
-        . ' `owner` INT NOT NULL, '
-        . ' `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,'
-        . ' INDEX (`owner`)'
-        . ' )'
-        . ' ENGINE = myisam;';
-		DB::query($todos);
+		if ($this->Auth->isMember())
+			$this->Router->redirect("members");
+		$this->set('page_title', "My ToDo List");
 	}
 
 	function developers() {
@@ -44,9 +33,6 @@ class Controller_Index extends Controller_Base {
 		$this->set('developers', $developers);
 		$this->set('page_title', "Developers");
 		$this->setTemplate('main');	
-	}
-
-	function about() {
 	}
 
 }

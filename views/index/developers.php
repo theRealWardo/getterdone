@@ -1,14 +1,5 @@
-<div class="page-content" id="developers">
+<div class="page-content" id="index-developers">
 
-<?=$form->create("contributors")?>
-<?=$form->text("Name","name")?>
-<?=$form->text("E-Mail Address","email")?>
-<?=$form->submit('Add Developer')?>
-
-<ul class="developers">
-<? foreach ($developers as $developer): ?>
-	<li><a href="mailto:<?=$developer['email']?>"><?=$developer['name']?></a></li>
-<? endforeach ?>
-</ul>
+Give me feedback and get involved in enhancing this application or modifying it for your own needs on <a href="http://github.com/theRealWardo/getterdone">GitHub</a>.
 
 </div>

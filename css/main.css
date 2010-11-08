@@ -1,16 +1,18 @@
 @font-face { font-family: Molengo; src: url(/lib/fonts/Molengo.ttf) format("truetype"); }
 html, body, div, span, applet, article, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, header, img, ins, kbd, nav, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
 body { background:url(/images/header_bg.gif) top repeat-x #B2B2B2; font-family:Arial, Helvetica, sans-serif; }
+h3 { font-size:20px; font-weight:bold; padding:5px; }
 a { text-decoration:none; }
 img { border:0; }
 h1 { color:#FFFFFF; padding:20px 0; font-family:Molengo, Arial, Helvetica, sans-serif; font-size:3em; text-align:center; text-shadow:1px 1px 2px #666666; }
+ul { list-style: none; }
 div#container { width:850px; margin:0 auto; }
 header { height:54px; width:850px; }
 div#logo { float:left; }
 div#logo a { width:220px; height:53px; }
 .message { clear:both; text-align:center; background:#FFFFCC; padding: 10px 0; border-top:1px solid #666666; border-bottom:1px solid #666666; }
 nav { float:right; width:400px; }
-nav ul { width:300px; height:53px; float:left; list-style:none; }
+nav ul { width:300px; height:53px; float:left; }
 nav ul li { float:left; padding:17px 20px 0; }
 nav ul li a { color:#CFFFFF; }
 nav ul li a:hover, nav ul li.active a { color:#FFFFFF; }
@@ -26,3 +28,36 @@ div.button a:hover { color:#FFFFFF; background-color: #CCCCCC; background-image:
 #home div.left { float:left; width:320px; height:125px; padding:10px 20px 0 0; text-align:right; }
 #home div.left .button { position:relative; top:12px; } /* compensate for img in right button */
 #home div.right { float:right; width:405px; height:125px; padding:10px 20px 0 0; text-align:left; }
+/* Main ToDo Manager Style */
+#main-content, #main-index { width:100%; clear:both; }
+.folders { width:250px; float:left; }
+.folders a { display:block; padding:0 5px; color:#FFFFFF; }
+.folders a.newFolder { display:block; font-size:18px; padding:0 0 0 30px; margin:5px 0; background:url(/images/plus.png) no-repeat; color:#006600; }
+.folders a.newFolder:hover { color:#009900; }
+.folders ul { padding:5px; margin:5px; background:#DDD; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; }
+.folders ul li { padding:5px; margin:3px; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; }
+.folders ul li a { float:left; line-height:24px; }
+.folders ul li a.title { width:150px; }
+.folders ul li a.color { float:right; display:block; text-indent:-9999px; height:24px; width:24px; background:url(/images/color.png) no-repeat; opacity:0.5; filter:alpha(opacity=50); padding:0; }
+.folders ul li a.delete { float:right; display:block; text-indent:-9999px; height:24px; width:24px; background:url(/images/delete.png) no-repeat; opacity:0.5; filter:alpha(opacity=50); padding:0; }
+.folders ul li:hover a.color:hover, .folders ul li:hover a.delete:hover { opacity:1.0; filter:alpha(opacity=100); }
+.todos { width:600px; float:left; }
+.todos h3 { float:left; }
+.todos a.newTodo { display:block; float:right; font-size:18px; padding:0 0 0 30px; margin:5px 0; background:url(/images/plus.png) no-repeat; color:#006600; }
+.todos a.newTodo:hover { color:#009900; }
+.todos ul { clear:both; padding:5px; margin:5px; background:#DDD; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; }
+.todos ul li { padding:5px 10px; margin:3px; background:#FFF; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; }
+.todos ul li a { padding:3px 0 3px 35px; font-size:18px; float:left; display:block; background:url(/images/checks.png) no-repeat; }
+.todos ul li a.complete { background-position:0 -100px; }
+.todos ul li a:hover { background-position:0 -50px; }
+.todos ul li a.delete { display:block; float:right; background:url(/images/delete.png) no-repeat; margin:3px 0 0 0; text-indent:-9999px; width:24px; height:24px; opacity:0.5; filter:alpha(opacity=50); padding:0; }
+.todos ul li a.delete:hover { opacity:1.0; filter:alpha(opacity=100); }
+.todos ul li.welcome { background:#DDDDDD; text-align:center; font-weight:bold; line-height:1.5em; }
+.todos ul li.welcome a { padding:0; font-size:auto; display:inline; float:none; background:none; color:#0000CC; }
+/** The Overlay Window **/
+#overlay { position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); }
+#overlay-content { position:absolute; width:250px; height:250px; background:#CCCCCC; border:10px solid #000000; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; padding:5px; }
+#overlay-content h3 { text-align:center; }
+#overlay-content input, #overlay-content select { border:1px solid #999999; width:238px; padding:5px; color:#333333; font-size:14px; margin-top:10px; }
+#overlay-content .colors a { display:block; float:left; width:50px; padding:10px; text-align:center; margin:5px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; }
+#overlay-content .buttons { padding-top:20px; clear:both; }
